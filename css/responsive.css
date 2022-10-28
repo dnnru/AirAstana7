@@ -1,0 +1,49 @@
+@media screen and (max-width: 1270px) { 
+
+	/* Accomodation */
+	.md-accomodation-available .grid_9 {float: none; margin-top: 20px; display: block; width: auto;}
+	.md-accomodation-available > .align-center {
+		display: block;
+		margin: 0 auto;
+		float: none;
+		width: 100%;
+	}
+	.md-accomodation .title-checkroom {width: auto;}
+	.md-accomodation .md-booking {padding-left: 0;}
+	.md-accomodation .booking-inline .form-group {margin-bottom: 0;}
+}
+@media screen and (max-width: 1200px) { 
+/* Accomodation */
+	.md-accomodation .row .grid_4 {width: 100%; margin-bottom: 25px;}
+	.md-accomodation .row {margin-bottom: 0;}
+	a {font-size:26px; color:red;}
+	
+}
+
+@media screen and (max-width: 960px) {
+.md-accomodation .row .grid_4 {width: 100%; margin-bottom: 25px;}
+	.md-accomodation .row {margin-bottom: 0;}
+
+}
+
+@media screen and (max-width: 768px) { 
+.md-accomodation .row .grid_4 {width: 100%; margin-bottom: 25px;}
+	.md-accomodation .row {margin-bottom: 0;}
+	
+}
+
+@media screen and (max-width: 640px) {
+
+.md-accomodation .row .grid_4 {width: 100%; margin-bottom: 25px;}
+	.md-accomodation .row {margin-bottom: 0;}
+	
+}
+
+@media screen and (max-width: 480px) { 
+	
+}
+
+@media screen and (max-width: 320px) { 
+	
+}
+

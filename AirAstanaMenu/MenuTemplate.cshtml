@@ -1,0 +1,135 @@
+﻿@using System.Collections.Generic
+@using System.Linq
+@using AirAstana.Themes.AirAstana7.Components
+@using DotNetNuke.Web.DDRMenu
+
+@inherits DotNetNuke.Web.Razor.DotNetNukeWebPage<dynamic>
+
+@{
+    var root = Model.Source.root;
+}
+
+@functions
+{
+
+    IEnumerable<IEnumerable<MenuNode>> Split(IEnumerable<MenuNode> list, int parts)
+    {
+        int i = 0;
+        return list.GroupBy(item => i++ % parts).Select(part => part.AsEnumerable());
+    }
+
+    string GetNodeLink(MenuNode node)
+    {
+        return node.Enabled ? node.Url : "#";
+    }
+
+    string GetColumnClass(int count)
+    {
+        return count == 5 ? "col-md-5ths" : string.Format("col-md-{0}", 12 / count);
+    }
+
+    int GetNodesCount(int total)
+    {
+        return total >= Constants.MAX_COLUMNS_COUNT ? Constants.MAX_COLUMNS_COUNT : total;
+    }
+
+}
+
+@helper RenderNodeIcon(MenuNode node, bool isLarge)
+{
+    if (isLarge && !string.IsNullOrWhiteSpace(node.LargeImage))
+    {
+        <img src="@node.LargeImage" class="menu-icon-lg" alt="" />
+    }
+    else if (!string.IsNullOrWhiteSpace(node.Icon))
+    {
+        <img src="@node.Icon" class="menu-icon-sm" alt="" />
+    }
+}
+
+@helper RenderStaticLinks()
+{ }
+
+@helper RenderNodes(IList<MenuNode> nodes, int depth)
+{
+    if (nodes.Count > 0)
+    {
+        if (depth < 1)
+        {
+            foreach (var node in nodes)
+            {
+                <li class="dropdown yamm-fw">
+                    <a href="@GetNodeLink(node)" class="dropdown-toggle" data-toggle="dropdown">
+                        @RenderNodeIcon(node, false)@node.Text
+                    </a>
+                    @RenderNodes(node.Children, depth + 1)
+                </li>
+            }
+        }
+        else
+        {
+            <ul class="dropdown-menu" role="menu">
+                <li>
+                    <div class="yamm-content">
+                        <div class="dropdown-menu-items">
+                            <div class="navbar-hide-small">
+                                <div class="media">
+                                    <div class="media-body">
+                                        @RenderStaticLinks()
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-div">
+                                <div class="row">
+                                    @for (int i = 0; i < GetNodesCount(nodes.Count); i++)
+                                    {
+                                        if (nodes.Count > 0 && nodes.Count > i)
+                                        {
+                                            MenuNode node = nodes[i];
+                                            string lastColumn = i == GetNodesCount(nodes.Count) - 1 && node.Children.Count(n => n.Keywords == Constants.ADDITIONAL_NODE) > 0 ? "last-column" : "";
+                                            string secondLevelAdditional = i == GetNodesCount(nodes.Count) - 1 && node.Children.Count(n => n.Keywords == Constants.ADDITIONAL_NODE) > 0 ? "second-level-additional" : "";
+                                            <div class="@GetColumnClass(GetNodesCount(nodes.Count)) @lastColumn">
+                                                <ul class="menu-div-list">
+                                                    @foreach (var menuNode in node.Children.Where(n => n.Keywords == Constants.ADDITIONAL_NODE))
+                                                    {
+                                                        string additionalNodeClass = menuNode.Separator ? "additional-node-last" : "additional-node";
+                                                        <li class="@additionalNodeClass">
+                                                            <div class="additional-node-content">
+                                                                @RenderNodeIcon(menuNode, false)
+                                                                <div class="additional-node-url">
+                                                                    <div><a href="@GetNodeLink(menuNode)">@menuNode.Text</a></div>
+                                                                    <div class="additional-node-description">@menuNode.Description</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    }
+                                                    <li class="second-level">
+                                                        <div class="second-level-content">
+                                                            <a class="@secondLevelAdditional" href="@GetNodeLink(node)">@RenderNodeIcon(node, false)@node.Text</a>
+                                                        </div>
+                                                    </li>
+                                                    @foreach (var menuNode in node.Children.Where(n => n.Keywords != Constants.ADDITIONAL_NODE))
+                                                    {
+                                                        <li class="third-level">
+                                                            <div class="third-level-content">
+                                                                <a href="@GetNodeLink(menuNode)">@menuNode.Text</a>
+                                                            </div>
+                                                        </li>
+                                                    }
+                                                </ul>
+                                            </div>
+                                        }
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        }
+    }
+}
+
+<ul class="nav navbar-nav depth0">
+    @RenderNodes(root.Children, 0)
+</ul>

@@ -1,0 +1,21 @@
+<ul class="nav nav-pills">
+[*>NODE]
+</ul>
+
+[>NODE]
+	<li class="[?NODE]sidenode [/?][?SELECTED]active[/?]">
+	[?ENABLED]
+		<a href="[=URL]" target="[=TARGET]" [?NODE] [/?]>[=TEXT] [?NODE]<b class="sidelink"></b>[/?]</a>
+	[?ELSE]
+		<a href="#" [?NODE] [/?]>[=TEXT] [?NODE]<b class="sidelink disabled"></b>[/?]</a>
+	[/?]
+	[?NODE]
+	    <ul class="sidemenulevel">
+	    [*>NODE]
+	    </ul>
+	[/?]
+	</li>
+[/>]
+
+<script type="text/javascript">
+</script>

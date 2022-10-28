@@ -1,0 +1,100 @@
+@using System.Collections.Generic
+@using AirAstana.Themes.AirAstana7.Components
+@using DotNetNuke.Web.DDRMenu;
+
+@inherits DotNetNuke.Web.Razor.DotNetNukeWebPage<dynamic>
+
+@{
+    var root = Model.Source.root;
+}
+
+@helper RenderNodeIcon(MenuNode node, bool isLarge)
+{
+    if (isLarge && !string.IsNullOrWhiteSpace(node.LargeImage))
+    {
+        <img src="@node.LargeImage" class="menu-icon-lg" alt="" />
+    }
+    else if (!string.IsNullOrWhiteSpace(node.Icon))
+    {
+        <img src="@node.Icon" class="menu-icon-sm" alt="" />
+    }
+}
+
+@helper RenderStaticLinks(MenuNode node)
+{
+    <h1>Static Links</h1>
+}
+
+@helper RenderNodes(IList<MenuNode> nodes, int depth)
+{
+    if (nodes.Count > 0)
+    {
+        if (depth < 1)
+        {
+            foreach (var node in nodes)
+            {
+                string haspopup = node.Children.Count > 0 ? "true" : "false";
+                <li aria-haspopup="@haspopup">
+                    <a href="@node.GetNodeLink()" class="navtext">
+                        @RenderNodeIcon(node, false)
+                        @if (node.Children.Count > 0)
+                        {
+                            <span>@node.Text</span>
+                        }
+                        else
+                        {
+                            <span>@node.Text <i class="wsmenu-arrow fa fa-angle-down"></i></span>
+                        }
+                        
+                    </a>
+                    @RenderNodes(node.Children, depth + 1)
+                </li>
+            }
+        }
+        else
+        {
+            <div class="wsshoptabing wtsbrandmenu clearfix">
+                <div class="wsshoptabingwp clearfix">
+                    <ul class="wstabitem02 clearfix">
+                        @foreach (var node in nodes)
+                        {
+                            string linkActive = node.Breadcrumb ? "wsshoplink-active" : "";
+                            string tabActive = node.Breadcrumb ? "wsshoptab-active wstbrandbottom clearfix" : "wstbrandbottom clearfix";
+                            <li class="@linkActive">
+                                <a href="@node.GetNodeLink()" class="">
+                                    @RenderNodeIcon(node, false)&nbsp;<span>@node.Text</span>
+                                </a>
+                                @if (node.Children.Count > 0)
+                                {
+                                    <div class="@tabActive">
+                                        <div class="container-fluid">
+                                            @RenderStaticLinks(node)
+                                            <div class="row">
+                                                @foreach (var chunk in node.Children.Split(4))
+                                                {
+                                                    <div class="col-lg-3 col-md-12">
+                                                        <ul class="wstliststy02 clearfix">
+                                                            <li class="wstheading clearfix">&nbsp;</li>
+                                                            @foreach (var menuNode in chunk)
+                                                            {
+                                                                <li>
+                                                                    <a href="@menuNode.GetNodeLink()"><i class="fa fa-arrow-right"></i>&nbsp;<span>@menuNode.Text</span></a>
+                                                                </li>
+                                                            }
+                                                        </ul>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        }
+    }
+}
+
+<ul class="wsmenu-list">@RenderNodes(root.Children, 0)</ul>

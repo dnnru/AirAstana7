@@ -1,0 +1,85 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="AirAstana.Themes.AirAstana7" type="Skin" version="01.00.21">
+      <friendlyName>AirAstana7</friendlyName>
+      <description>A responsive DNN skin using Bootstrap 3. Requires installation via the Host/Extensions page.</description>
+      <owner>
+        <name>Air Astana</name>
+        <organization>Air Astana</organization>
+        <url>https://airastana.com</url>
+        <email>support@airastana.com</email>
+      </owner>
+      <azureCompatible>true</azureCompatible>
+      <license src="license.txt"></license>
+      <releaseNotes src="releasenotes.txt"></releaseNotes>
+      <dependencies>
+        <dependency type="CoreVersion">09.03.00</dependency>
+      </dependencies>
+      <components>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>portals/_default/skins/AirAstana7</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <assembly>
+              <name>AirAstana.Themes.AirAstana7.dll</name>
+              <path>bin</path>
+            </assembly>
+          </assemblies>
+        </component>
+        <component type="Skin">
+          <skinFiles>
+            <skinName>AirAstana7</skinName>
+            <basePath />
+            <skinFile>
+              <name>Home.ascx</name>
+            </skinFile>
+            <skinFile>
+              <name>Inner.ascx</name>
+            </skinFile>
+            <skinFile>
+              <name>InnerLandingPage.ascx</name>
+            </skinFile>
+            <skinFile>
+              <name>InnerNoSidebar.ascx</name>
+            </skinFile>
+            <skinFile>
+              <name>IBEText.ascx</name>
+            </skinFile>
+          </skinFiles>
+        </component>
+      </components>
+    </package>
+    <package name="AirAstana.Themes.Containers.AirAstana7" type="Container" version="01.00.21">
+      <friendlyName>AirAstana7</friendlyName>
+      <description>Containers for the AirAstana7 Skin package.</description>
+      <owner>
+        <name>Air Astana</name>
+        <organization>Air Astana</organization>
+        <url>https://airastana.com</url>
+        <email>support@airastana.com</email>
+      </owner>
+      <license src="license.txt"></license>
+      <releaseNotes src="releasenotes.txt"></releaseNotes>
+      <dependencies>
+        <dependency type="CoreVersion">09.03.00</dependency>
+      </dependencies>
+      <components>
+        <component type="Container">
+          <containerFiles>
+            <containerName>AirAstana7</containerName>
+            <basepath/>
+            <containerFile>
+              <name>NoTitle.ascx</name>
+            </containerFile>
+          </containerFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

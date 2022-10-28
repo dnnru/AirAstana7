@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="arrivlaDate.text" xml:space="preserve">
+    <value>La date doit être postérieure à la date de départ.</value>
+  </data>
+  <data name="charExact.text" xml:space="preserve">
+    <value>Veuillez saisir précisément {0} caractères</value>
+  </data>
+  <data name="charLimits.text" xml:space="preserve">
+    <value>Veuillez saisir des caractères d’une longueur de {0} à {1}</value>
+  </data>
+  <data name="dateBirtday.text" xml:space="preserve">
+    <value>Veuillez saisir la date de naissance. L’âge du participant doit être supérieur à 2 ans.</value>
+  </data>
+  <data name="dateWithinYear.text" xml:space="preserve">
+    <value>Veuillez saisir une date entre le jour actuel et cette même date de l’année suivante.</value>
+  </data>
+  <data name="email.text" xml:space="preserve">
+    <value>Veuillez saisir  un e-mail correct.</value>
+  </data>
+  <data name="emailEqualTo.text" xml:space="preserve">
+    <value>L'e-mail de confirmation ne correspond pas</value>
+  </data>
+  <data name="equalTo.text" xml:space="preserve">
+    <value>Saisissez le même mot de passe que précédemment</value>
+  </data>
+  <data name="invalidDate.text" xml:space="preserve">
+    <value>Veuillez saisir une date correcte</value>
+  </data>
+  <data name="lettersOnly.text" xml:space="preserve">
+    <value>S'il vous plaît utiliser des caractères latins</value>
+  </data>
+  <data name="maxPax.text" xml:space="preserve">
+    <value>Le nombre total de passagers ne doit pas être supérieur à 9.</value>
+  </data>
+  <data name="notEqual.text" xml:space="preserve">
+    <value>Les sélections (lignes) ne peuvent pas être identiques</value>
+  </data>
+  <data name="numberOfDigits.text" xml:space="preserve">
+    <value>Veuillez saisir le nombre nécessaire de caractères</value>
+  </data>
+  <data name="numbersOnly.text" xml:space="preserve">
+    <value>Ce champ doit comprendre seulement des chiffres</value>
+  </data>
+  <data name="optionRequired.text" xml:space="preserve">
+    <value>Veuillez choisir l’une des options.</value>
+  </data>
+  <data name="passwordAA.text" xml:space="preserve">
+    <value>Le mot de passe saisi doit contenir au moins une lettre et  un chiffre et doit être composé d’au moins 6 caractères.</value>
+  </data>
+  <data name="required.text" xml:space="preserve">
+    <value>Ce champ doit obligatoirement être renseigné</value>
+  </data>
+  <data name="tcRequired.text" xml:space="preserve">
+    <value>Il est indispensable d’accepter le règlement et les conditions afin de pouvoir entrer.</value>
+  </data>
+</root>

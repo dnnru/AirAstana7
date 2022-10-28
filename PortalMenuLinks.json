@@ -1,0 +1,610 @@
+﻿[
+  {
+    "PortalId": 2,
+    "PortalName": "Қазақстан",
+    "MenuLinks": [
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Book/Book-Flights",
+        "Text": "Book flight",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Manage/Online-Check-In ",
+        "Text": "Online Check-In",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "en-US",
+        "Url": "https://help.airastana.com/hc/en-gb",
+        "Text": "FAQ",
+        "Description": "Everything you need to know",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "ru-RU",
+        "Url": "https://airastana.com/kaz/ru-ru/Бронирование-и-управление/Бронирование/Купить-билет",
+        "Text": "Купить билет",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "ru-RU",
+        "Url": "https://airastana.com/kaz/ru-ru/Бронирование-и-управление/Управление/Онлайн-регистрация",
+        "Text": "Онлайн регистрация",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "ru-RU",
+        "Url": "https://help.airastana.com/hc/ru",
+        "Text": "Общие вопросы",
+        "Description": "Все, что Вам нужно знать",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "kk-KZ",
+        "Url": "https://airastana.com/kaz/kk-kz/Брондау-және-басқару/Брондау/Билет-сатып-алу",
+        "Text": "Билет сатып алу",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "kk-KZ",
+        "Url": "https://airastana.com/kaz/kk-kz/Брондау-және-басқару/Басқару/Онлайн-тіркелу",
+        "Text": "Онлайн тіркелу",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "kk-KZ",
+        "Url": "https://help.airastana.com/hc/kk",
+        "Text": "Жалпы сұрақтар",
+        "Description": "Сізге қажет нәрсенің бәрі",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      }
+    ]
+  },
+  {
+    "PortalId": 3,
+    "PortalName": "Россия",
+    "Disabled": true,
+    "MenuLinks": [
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Book/Book-Flights",
+        "Text": "Book flight",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Manage/Online-Check-In ",
+        "Text": "Online Check-In",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "en-US",
+        "Url": "https://help.airastana.com/hc/en-gb",
+        "Text": "FAQ",
+        "Description": "Everything you need to know",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "ru-RU",
+        "Url": "https://airastana.com/kaz/ru-ru/Бронирование-и-управление/Бронирование/Купить-билет",
+        "Text": "Купить билет",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "ru-RU",
+        "Url": "https://airastana.com/kaz/ru-ru/Бронирование-и-управление/Управление/Онлайн-регистрация",
+        "Text": "Онлайн регистрация",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "ru-RU",
+        "Url": "https://help.airastana.com/hc/ru",
+        "Text": "Общие вопросы",
+        "Description": "Все, что Вам нужно знать",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "kk-KZ",
+        "Url": "https://airastana.com/kaz/kk-kz/Брондау-және-басқару/Брондау/Билет-сатып-алу",
+        "Text": "Билет сатып алу",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      }
+    ]
+  },
+  {
+    "PortalId": 4,
+    "PortalName": "India",
+    "MenuLinks": [
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Book/Book-Flights",
+        "Text": "Book flight",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Manage/Online-Check-In ",
+        "Text": "Online Check-In",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "en-US",
+        "Url": "https://help.airastana.com/hc/en-gb",
+        "Text": "FAQ",
+        "Description": "Everything you need to know",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      }
+    ]
+  },
+  {
+    "PortalId": 5,
+    "PortalName": "UAE",
+    "MenuLinks": [
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Book/Book-Flights",
+        "Text": "Book flight",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Manage/Online-Check-In ",
+        "Text": "Online Check-In",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "en-US",
+        "Url": "https://help.airastana.com/hc/en-gb",
+        "Text": "FAQ",
+        "Description": "Everything you need to know",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      }
+    ]
+  },
+  {
+    "PortalId": 6,
+    "PortalName": "UK",
+    "MenuLinks": [
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Book/Book-Flights",
+        "Text": "Book flight",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Manage/Online-Check-In ",
+        "Text": "Online Check-In",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "en-US",
+        "Url": "https://help.airastana.com/hc/en-gb",
+        "Text": "FAQ",
+        "Description": "Everything you need to know",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "ru-RU",
+        "Url": "https://airastana.com/kaz/ru-ru/Бронирование-и-управление/Бронирование/Купить-билет",
+        "Text": "Купить билет",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "ru-RU",
+        "Url": "https://airastana.com/kaz/ru-ru/Бронирование-и-управление/Управление/Онлайн-регистрация",
+        "Text": "Онлайн регистрация",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "ru-RU",
+        "Url": "https://help.airastana.com/hc/ru",
+        "Text": "Общие вопросы",
+        "Description": "Все, что Вам нужно знать",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "kk-KZ",
+        "Url": "https://airastana.com/kaz/kk-kz/Брондау-және-басқару/Брондау/Билет-сатып-алу",
+        "Text": "Билет сатып алу",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      }
+    ]
+  },
+  {
+    "PortalId": 7,
+    "PortalName": "Türkiye",
+    "MenuLinks": [
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Book/Book-Flights",
+        "Text": "Book flight",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Manage/Online-Check-In ",
+        "Text": "Online Check-In",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "en-US",
+        "Url": "https://help.airastana.com/hc/en-gb",
+        "Text": "FAQ",
+        "Description": "Everything you need to know",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "tr-TR",
+        "Url": "https://airastana.com/tur/tr-tr/Planlayin/Rezervasyon",
+        "Text": "Rezervasyon",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "tr-TR",
+        "Url": "https://airastana.com/tur/tr-tr/Rezervasyonum/Varolan-Rezervasyon/Online-Check-In",
+        "Text": "Online Check-In",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "tr-TR",
+        "Url": "https://help.airastana.com/hc/tr",
+        "Text": "Genel Sorular",
+        "Description": "Bilmen gereken her şey",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      }
+    ]
+  },
+  {
+    "PortalId": 8,
+    "PortalName": "Deutschland",
+    "MenuLinks": [
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Book/Book-Flights",
+        "Text": "Book flight",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Manage/Online-Check-In ",
+        "Text": "Online Check-In",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "en-US",
+        "Url": "https://help.airastana.com/hc/en-gb",
+        "Text": "FAQ",
+        "Description": "Everything you need to know",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "de-DE",
+        "Url": "https://airastana.com/ger/de-de/Planen/Fluege-buchen",
+        "Text": "Flugbuchungen",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "de-DE",
+        "Url": "https://airastana.com/ger/de-de/Meine-Buchung/Bestehende-Buchungen/Online-Check-In",
+        "Text": "Web-Check-In",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "de-DE",
+        "Url": "https://help.airastana.com/hc/de",
+        "Text": "Allgemeine Fragen",
+        "Description": "Alles, was Sie wissen müssen",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      }
+    ]
+  },
+  {
+    "PortalId": 18,
+    "PortalName": "France",
+    "MenuLinks": [
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Book/Book-Flights",
+        "Text": "Book flight",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Manage/Online-Check-In ",
+        "Text": "Online Check-In",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "en-US",
+        "Url": "https://help.airastana.com/hc/en-gb",
+        "Text": "FAQ",
+        "Description": "Everything you need to know",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "fr-FR",
+        "Url": "https://airastana.com/fra/fr-fr/Planifiez/Reserver",
+        "Text": "Réserver",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "fr-FR",
+        "Url": "https://airastana.com/fra/fr-fr/Ma-reservation/Enregistrement-en-ligne",
+        "Text": "Enregistrement en ligne",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "fr-FR",
+        "Url": "https://help.airastana.com/hc/fr",
+        "Text": "Questions générales",
+        "Description": "Tout ce que tu as besoin de savoir",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      }
+    ]
+  },
+  {
+    "PortalId": 22,
+    "PortalName": "Korea",
+    "MenuLinks": [
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Book/Book-Flights",
+        "Text": "Book flight",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Manage/Online-Check-In ",
+        "Text": "Online Check-In",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "en-US",
+        "Url": "https://help.airastana.com/hc/en-gb",
+        "Text": "FAQ",
+        "Description": "Everything you need to know",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "ko-KR",
+        "Url": "https://airastana.com/kor/ko-kr/Plan/Book-Flights",
+        "Text": "항공편 예약",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "ko-KR",
+        "Url": "https://airastana.com/kor/ko-kr/My-Booking/Online-Check-In",
+        "Text": "Web-Check-In",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "ko-KR",
+        "Url": "https://help.airastana.com/hc/ko",
+        "Text": "일반질문",
+        "Description": "알아야 할 모든 것",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      }
+    ]
+  },
+  {
+    "PortalId": 24,
+    "PortalName": "China",
+    "MenuLinks": [
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Book/Book-Flights",
+        "Text": "Book flight",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Manage/Online-Check-In ",
+        "Text": "Online Check-In",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "en-US",
+        "Url": "https://help.airastana.com/hc/en-gb",
+        "Text": "FAQ",
+        "Description": "Everything you need to know",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "zh-CN",
+        "Url": "https://airastana.com/chn/zh-cn/Plan/Book-Flights",
+        "Text": "预订航班",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "zh-CN",
+        "Url": "https://airastana.com/chn/zh-cn/My-Booking/Online-Check-In",
+        "Text": "网上值机",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "zh-CN",
+        "Url": "https://help.airastana.com/hc/zh-cn",
+        "Text": "常见问题",
+        "Description": "你需要知道的一切",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      }
+    ]
+  },
+  {
+    "PortalId": 26,
+    "PortalName": "Global",
+    "MenuLinks": [
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Book/Book-Flights",
+        "Text": "Book flight",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "en-US",
+        "Url": "https://airastana.com/kaz/en-us/Book-manage/Manage/Online-Check-In ",
+        "Text": "Online Check-In",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "en-US",
+        "Url": "https://help.airastana.com/hc/en-gb",
+        "Text": "FAQ",
+        "Description": "Everything you need to know",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "ru-RU",
+        "Url": "https://airastana.com/kaz/ru-ru/Бронирование-и-управление/Бронирование/Купить-билет",
+        "Text": "Купить билет",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/book-flight-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 1,
+        "Language": "ru-RU",
+        "Url": "https://airastana.com/kaz/ru-ru/Бронирование-и-управление/Управление/Онлайн-регистрация",
+        "Text": "Онлайн регистрация",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/online-check-in-icon.png",
+        "MobileFirst": true
+      },
+      {
+        "Section": 2,
+        "Language": "ru-RU",
+        "Url": "https://help.airastana.com/hc/ru",
+        "Text": "Общие вопросы",
+        "Description": "Все, что Вам нужно знать",
+        "Icon": "/Portals/_default/Skins/AirAstana7/img/help-centre-icon.png",
+        "MobileFirst": true
+      }
+    ]
+  }
+]

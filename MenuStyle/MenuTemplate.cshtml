@@ -1,0 +1,104 @@
+﻿@using System.Collections.Generic
+@using DotNetNuke.Web.DDRMenu;
+@using System.Dynamic;
+
+@inherits DotNetNuke.Web.Razor.DotNetNukeWebPage<dynamic>
+
+@{ var root = Model.Source.root; }
+
+@helper RenderNodeIcon(int nodePosition, bool isLarge)
+{
+    string icon = "fa fa-plane";
+
+    switch (nodePosition)
+    {
+        case 1:
+            icon = "fa fa-user";
+            break;
+        case 2:
+            icon = "fa fa-info-circle";
+            break;
+        case 3:
+            icon = "fa fa-star";
+            break;
+        case 4:
+            icon = "aa-icon aa-icon-card";
+            break;
+        case 5:
+            icon = "aa-icon aa-icon-logo";
+            break;
+    }
+
+    if (isLarge)
+    {
+        <i class="media-object @icon fa-4x navbar-hide-small"></i>
+    }
+    else
+    {
+        <i class="@icon fa-lg navbar-hide-small"></i>
+    }
+}
+
+@helper RenderNodes(IList<MenuNode> nodes, int depth, int counter = -1, MenuNode parentNode = null)
+{
+    if (nodes.Count > 0)
+    {
+        if (depth < 1)
+        {
+            int current = -1;
+            foreach (var node in nodes)
+            {
+                current++;
+                string url = node.Enabled ? node.Url : "#";
+                <li class="dropdown yamm-fw">
+                    <a href="@url" class="dropdown-toggle" data-toggle="dropdown">
+                        @RenderNodeIcon(current, false)@node.Text <span class="caret"></span>
+                    </a>
+                    @RenderNodes(node.Children, depth + 1, current, node)
+                </li>
+
+            }
+        }
+        else
+        {
+            <ul class="dropdown-menu" role="menu">
+                <li>
+                    <div class="yamm-content">
+                        <div class="row dropdown-menu-items">
+
+                            <div class="col-md-4 navbar-hide-small">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        @RenderNodeIcon(counter, true)
+                                    </span>
+                                    <div class="media-body">
+                                        @if (parentNode != null)
+                                        {
+                                            <h3>@parentNode.Title</h3>
+                                            <p>@parentNode.Description</p>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-8 menu-div">
+                                <ul>
+                                    @foreach (var node in nodes)
+                                    {
+                                        <li><a href="@node.Url"><i class="fa fa-arrow-right"></i>&nbsp;@node.Text</a></li>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        }
+    }
+}
+
+<ul class="nav navbar-nav navbar-right">
+    @RenderNodes(root.Children, 0)
+</ul>
+

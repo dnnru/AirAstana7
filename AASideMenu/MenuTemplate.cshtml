@@ -1,0 +1,80 @@
+﻿@using System.Collections.Generic
+@using DotNetNuke.Web.DDRMenu;
+@using System.Dynamic;
+@using System.Linq
+
+@inherits DotNetNuke.Web.Razor.DotNetNukeWebPage<dynamic>
+
+@{ var root = Model.Source.root; }
+@helper RenderNodes(IList<MenuNode> nodes, int depth, bool parentActive)
+{
+    if (nodes.Count > 0)
+    {
+        if (depth < 1)
+        {
+            foreach (var node in nodes)
+            {
+                string divId = "collapse" + node.TabId;
+                string url = node.Enabled && (node.Children == null || node.Children.Count == 0) ? node.Url : "#" + divId;
+                string additionalAttr = "";
+                string nodeClass = "sidenodetop";
+                <li class="sidemenu-topnode">
+                    <h3>
+                        @if (url.StartsWith("#"))
+                        {
+                            if (node.Selected)
+                            {
+                                nodeClass = nodeClass + " activemenu";
+                            }
+                            <a href="@url" class="@nodeClass" data-toggle="collapse" data-parent="#sidemenucont">
+                                @node.Text
+                                <span class="caret"></span>
+                            </a>
+                        }
+                        else
+                        {
+                            if (node.Selected)
+                            {
+                                nodeClass = nodeClass + " activemenu";
+                            }
+                            <a href="@url" class="@nodeClass" @additionalAttr>
+                                @node.Text
+                            </a>
+                        }
+                    </h3>
+                    @if (node.Children != null && node.Children.Count > 0)
+                    {
+                        string colClass = "collapse";
+                        if (node.Selected || (from c in node.Children where c.Selected select c).Count() > 0)
+                        {
+                            colClass = "";
+                        }
+
+                        <div id="@divId" class="@colClass">
+                            @RenderNodes(node.Children, depth + 1, node.Selected || parentActive)
+                        </div>
+                    }
+                </li>
+            }
+        }
+        else
+        {
+            <ul>
+                @foreach (var node in nodes)
+                {
+                    string nodeClass = "";
+                    if (node.Selected)
+                    {
+                        nodeClass = " activemenu";
+                    }
+
+                    <li><h4><a href="@node.Url" class="@nodeClass">@node.Text</a></h4></li>
+                }
+            </ul>
+        }
+    }
+}
+
+<ul class="sidenav">
+    @RenderNodes(root.Children, 0, false)
+</ul>
