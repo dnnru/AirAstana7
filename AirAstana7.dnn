@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="AirAstana.Themes.AirAstana7" type="Skin" version="01.00.21">
+    <package name="AirAstana.Themes.AirAstana7" type="Skin" version="01.00.22">
       <friendlyName>AirAstana7</friendlyName>
       <description>A responsive DNN skin using Bootstrap 3. Requires installation via the Host/Extensions page.</description>
       <owner>
